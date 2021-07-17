@@ -1,0 +1,105 @@
+/* pc */
+@media (min-width: 1024px) {
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width:1024px) {
+    #header .mobile-menu-btn{
+        display: none;
+    }
+
+    #modal .modal-container{
+        width: 650px;
+    }
+}
+
+/* mobile */
+@media (max-width: 740px) {
+
+    .s-full-width{
+        width: 100%;
+    }
+
+    #header{
+    overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav>li:first-child{
+        display: inline-block;
+    }
+
+    #nav li{
+        display: block;
+        padding: 1px 0;
+    }
+
+    #nav li .subnav{
+        position:initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 0 38px;
+    }
+
+    #header .btn-search{
+        display: none;
+    }
+    #header .mobile-menu-btn:hover{
+        background-color: #ccc;
+    }
+
+    .text-heading{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .text-des {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    #main .content-section .content-heading{
+        font-size: 28px;
+    }
+
+    #main .about-text{
+        font-size: 16px;
+    }
+
+    .col{
+        float: none;
+        padding-top:8px;
+        padding-bottom: 8px;
+    }
+    
+    .col-1{
+        width: 100%;
+    }
+    #main .name-menber {
+        margin: 15px 0 5px;
+        font-size: 16px;
+    }
+    #main .menber-img {
+        margin-bottom: 16px;
+        width: 70%;
+    }
+    #contact .input-pad{
+        margin: 0 -8px;
+    }
+    #contact .contact-input{
+        width: 100%;
+        padding: 0px 8px 8px;
+    }
+    #modal {
+        padding:0 16px;
+    }
+
+}
