@@ -190,8 +190,8 @@
         <p>Power by <a href="w3school.com">w3.css</a></p>
     </div>
 
-    <div id="modal">
-        <div class="modal-container">
+    <div id="modal" class="js-modal">
+        <div class="modal-container js-modal-container">
             <div class="modal-header">
                 <i id="modal-close" class="modal-icons-close ti-close"></i>
                 <div class="modal-title">
@@ -252,18 +252,35 @@
                 }
             }
         }
+        const app = document.getElementById('app')
+        app.addEventListener('click', function(){
+            header.style.height = null;
+        })
+
 
         //modal 
         var close = document.getElementById('modal-close')
         var buyTickets = document.getElementsByClassName('button-buy')
-        var modal = document.getElementById('modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modal = document.querySelector('.js-modal')
 
         close.onclick = function(){
             modal.style.display = 'none'
         }
+
         function displayPlex(){
             modal.style.display = 'flex'
         }
+
+        function hiddenModal(){
+            modal.style.display = 'none'
+        }
+
+        modal.addEventListener('click',hiddenModal)
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
     </script>
 </body>
 </html>
